@@ -1,7 +1,7 @@
 import useCart from "./UseCart";
 import { useNavigate } from "react-router-dom";
 
-// Cart page component: shows cart items, total, and place order button
+// Shows cart items, total, and place order button
 const Cart = () => {
   const { cart, removeFromCart } = useCart();
   const navigate = useNavigate();
