@@ -1,12 +1,89 @@
-# React + Vite
+# Food and Things
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En enkel React/TailwindCSS-butik med varukorg, produktdetaljer och kassa.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Installation
 
-## Expanding the ESLint configuration
+1. **Klona repot**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   git clone <repo-url>
+   cd my-app
+   ```
+
+2. **Installera beroenden**
+
+   ```bash
+   npm install
+   ```
+
+3. **Starta utvecklingsservern**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Öppna i webbläsaren**
+   Besök [http://localhost:5173] (eller den port som Vite visar).
+
+---
+
+## 📁 Filstruktur
+
+```
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   ├── index.css
+│   └── components/
+│       ├── About.jsx
+│       ├── Cart.jsx
+│       ├── CartContext.jsx
+│       ├── CartProvider.jsx
+│       ├── Checkout.jsx
+│       ├── Footer.jsx
+│       ├── Home.jsx
+│       ├── Navbar.jsx
+│       ├── ProductDetails.jsx
+│       ├── Router.jsx
+│       └── UseCart.jsx
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── vite.config.js
+```
+
+---
+
+## 🧑‍💻 Funktioner
+
+- Produktlista med kategorifilter
+- Lägg till/ta bort produkter i varukorgen
+- Produktdetaljsida
+- Kassa med formulär
+- Responsiv design med Tailwind CSS
+- Dummy-footer och navbar
+
+---
+
+## 📦 Byggt med
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+
+---
+
+## 📋 Övrigt
+
+- All data hämtas från [dummyjson.com](https://dummyjson.com/).
+- Projektet är avsett som demo/prototyp.
+
+---
