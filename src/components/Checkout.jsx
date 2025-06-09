@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import useCart from "./UseCart";
 
 // Checkout page: collects user info and completes purchase
 const Checkout = () => {
@@ -10,7 +11,7 @@ const Checkout = () => {
   });
 
   const navigate = useNavigate();
-
+  const { clearCart } = useCart();
   // Handle input changes for the form
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,6 +25,7 @@ const Checkout = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Thank you for your purchase!");
+    clearCart([]);
     navigate("/");
   };
 

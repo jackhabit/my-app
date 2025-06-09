@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 // Shows cart items, total, and place order button
 const Cart = () => {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart, clearCart } = useCart();
   const navigate = useNavigate();
 
   // Calculate total price of items in cart
@@ -43,12 +43,20 @@ const Cart = () => {
             <span>Total:</span>
             <span>${totalPrice.toFixed(2)}</span>
           </div>
-          <button
-            className="bg-green-700 hover:bg-green-600 text-white px-6 py-2 rounded mt-6 font-semibold transition"
-            onClick={handleOrder}
-          >
-            Place Order
-          </button>
+          <div className="flex justify-between mt-6">
+            <button
+              className="bg-red-700 hover:bg-green-600 text-white px-6 py-2 rounded font-semibold transition"
+              onClick={() => clearCart()}
+            >
+              Clear
+            </button>
+            <button
+              className="bg-green-700 hover:bg-green-600 text-white px-6 py-2 rounded font-semibold transition ml-auto"
+              onClick={handleOrder}
+            >
+              Place Order
+            </button>
+          </div>
         </>
       )}
     </div>
