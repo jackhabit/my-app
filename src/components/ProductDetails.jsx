@@ -41,7 +41,7 @@ const ProductDetails = () => {
   return (
     <div className="max-w-2xl mx-auto my-8 p-6 bg-white border border-gray-300 rounded-lg text-center">
       {notification && (
-        <div className="fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded shadow z-50 animate-fade">
+        <div className="fixed top-20 right-6 bg-green-600 text-white px-4 py-2 rounded shadow z-10 animate-fade">
           {notification}
         </div>
       )}
